@@ -1,25 +1,26 @@
-import logo from "./logo.svg";
+import Logo from "./images/Mu_Torere.svg";
 import Perepere from "./components/Perepere";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+    <div class="container">
+      <div class="board">
+        <button class="square white pos0"></button>
+        <button class="square white pos1"></button>
+        <button class="square black pos2"></button>
+        <button class="square black pos3"></button>
+        <button class="square black pos4"></button>
+        <button class="square white pos5"></button>
+        <button class="square white pos6"></button>
+        <button class="square black pos7"></button>
+        <button class="square black pos8"></button>
+      </div>
+
+   
         <Perepere position="3" team="black" enable="true" />
-      </header>
+      
     </div>
   );
 }
