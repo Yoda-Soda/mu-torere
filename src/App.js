@@ -19,7 +19,7 @@ function App() {
           Learn React 
           
         </a>
-        <Perepere posistion="0" pereperecolor="w"/>
+        <Perepere team="white” position=“3" enable="true" /> 
       </header>
     </div>
   );
