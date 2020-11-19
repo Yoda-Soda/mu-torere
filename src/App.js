@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import Perepere from './components/Perepere';
-import './App.css';
+import logo from "./logo.svg";
+import Perepere from "./components/Perepere";
+import "./App.css";
 
 function App() {
   return (
@@ -16,10 +16,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React 
-          
+          Learn React
         </a>
-        <Perepere  position="3" team="black" enable="true"/> 
+        <Perepere position="3" team="black" enable="true" />
       </header>
     </div>
   );
