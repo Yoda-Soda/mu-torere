@@ -12,7 +12,7 @@ Runs the build steps for deployment.
 
 ### `yarn deploy`
 
-Runs the script to deploy to [http://Yoda-Soda.github.io/mu-torere](https://facebook.github.io/create-react-app/docs/)
+Runs the script to deploy to [http://Yoda-Soda.github.io/mu-torere](https://yoda-soda.github.io/mu-torere/)
 
 ### `yarn start`
 
