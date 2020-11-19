@@ -1,7 +1,7 @@
 .container {
   background-image: url(./images/papa_takaro.svg);
   max-width: 30rem;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 .board {
@@ -37,8 +37,8 @@
 }
 
 .pos1 {
-  top: -1%;
-  left: 26%;
+  top: -3%;
+  left: 24%;
 }
 
 .pos2 {
@@ -69,7 +69,7 @@
   left: -3%;
 }
 .pos8 {
-  top: -1%;
+  top: -3%;
   left: 63%;
 }
 .pos9 {
