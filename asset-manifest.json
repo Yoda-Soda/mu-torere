@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mu-torere/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/mu-torere/static/js/main.60dbcc6f.chunk.js",
+    "main.js.map": "/mu-torere/static/js/main.60dbcc6f.chunk.js.map",
+    "runtime-main.js": "/mu-torere/static/js/runtime-main.f3c3e303.js",
+    "runtime-main.js.map": "/mu-torere/static/js/runtime-main.f3c3e303.js.map",
+    "static/js/2.7b19fb36.chunk.js": "/mu-torere/static/js/2.7b19fb36.chunk.js",
+    "static/js/2.7b19fb36.chunk.js.map": "/mu-torere/static/js/2.7b19fb36.chunk.js.map",
+    "static/js/3.892537b9.chunk.js": "/mu-torere/static/js/3.892537b9.chunk.js",
+    "static/js/3.892537b9.chunk.js.map": "/mu-torere/static/js/3.892537b9.chunk.js.map",
+    "index.html": "/mu-torere/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/mu-torere/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.7b19fb36.chunk.js.LICENSE.txt": "/mu-torere/static/js/2.7b19fb36.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/mu-torere/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3c3e303.js",
+    "static/js/2.7b19fb36.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.60dbcc6f.chunk.js"
+  ]
+}
