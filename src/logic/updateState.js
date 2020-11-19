@@ -29,4 +29,9 @@ const startingState = () => {
   ];
 };
 
-module.exports = { resetState, startingState };
+const togglePlayer = (playerState) => {
+  if (playerState === "black") return "white";
+  return "black";
+};
+
+module.exports = { resetState, startingState, togglePlayer };

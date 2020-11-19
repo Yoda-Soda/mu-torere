@@ -35,11 +35,13 @@ describe("I have a way to start my state", () => {
     ]);
   });
 });
+
 describe("I have a way to change my active player", () => {
   test("It should toggle the active player from white to black", () => {
     const state = togglePlayer("white");
     expect(state).toBe("black");
   });
+
   test("It should toggle the active player from black to white", () => {
     const state = togglePlayer("black");
     expect(state).toBe("white");
