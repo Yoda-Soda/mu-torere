@@ -10,7 +10,7 @@ const Perepere = (props) => {
         cy="50"
         r="40"
         stroke="black"
-        stroke-width="4"
+        strokeWidth="4"
         fill={props.team}
       />
     </svg>
