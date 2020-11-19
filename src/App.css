@@ -1,5 +1,6 @@
 .container {
   background-image: url(./images/papa_takaro.svg);
+  background-repeat: no-repeat;
   max-width: 30rem;
   margin: 5rem auto;
 }
