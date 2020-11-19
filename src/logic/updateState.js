@@ -2,14 +2,14 @@
 const resetState = () => {
   return [
     { turn: "black" },
-    { posistion: 0, team: "black", enabled: false },
-    { posistion: 1, team: "black", enabled: false },
-    { posistion: 3, team: "black", enabled: false },
-    { posistion: 4, team: "black", enabled: false },
-    { posistion: 5, team: "black", enabled: false },
-    { posistion: 6, team: "black", enabled: false },
-    { posistion: 7, team: "black", enabled: false },
-    { posistion: 8, team: "black", enabled: false },
+    { posistion: 0, team: "black", enabled: true },
+    { posistion: 1, team: "black", enabled: true },
+    { posistion: 3, team: "black", enabled: true },
+    { posistion: 4, team: "black", enabled: true },
+    { posistion: 5, team: "black", enabled: true },
+    { posistion: 6, team: "black", enabled: true },
+    { posistion: 7, team: "black", enabled: true },
+    { posistion: 8, team: "black", enabled: true },
   ];
 };
 // allows for predictable starting state for the start of the game
@@ -33,4 +33,19 @@ const togglePlayer = (playerState) => {
   return "black";
 };
 
-module.exports = { resetState, startingState, togglePlayer };
+const disableInactivePlayer = (playerState) => {
+  for (let index = 1; index < playerState.length; index++) {
+    const element = playerState[index];
+    if (element.team === togglePlayer(playerState[0].turn)) {
+      element.enabled = false;
+    }
+  }
+  return playerState;
+};
+
+module.exports = {
+  resetState,
+  startingState,
+  togglePlayer,
+  disableInactivePlayer,
+};
