@@ -13,5 +13,20 @@ const resetState = () => {
     { team: "black" },
   ];
 };
+// allows for predictable starting state for the start of the game
+const startingState = () => {
+  return [
+    { turn: "white" },
+    { team: "black" },
+    { team: "black" },
+    { team: "black" },
+    { team: "black" },
+    { team: "white" },
+    { team: "white" },
+    { team: "white" },
+    { team: "white" },
+    { team: null },
+  ];
+};
 
-module.exports = { resetState };
+module.exports = { resetState, startingState };
