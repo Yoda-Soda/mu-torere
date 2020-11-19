@@ -1,29 +1,3 @@
-/* .container {
-  text-align: center;
-  width: 604px;
-  height: 604px;
-  background-image: url(./images/Mu_Torere.svg);
-  display: grid;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 
-  ". square1 square2 ."
-  "square3 center center square4"
-  "square5 center center square6"
-  "square7 square7 square8 square8"
-} */
-
-/* .container div {
-  outline: 1px solid red;
-  width: 500px;
-  height: 500px;
-} */
-
-/* .container div:hover {
-  background: hotpink;
-  opacity: 0.3;
-} */
-
 .container {
   background-image: url(./images/papa_takaro.svg);
   max-width: 30rem;
