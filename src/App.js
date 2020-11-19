@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-
+import Perepere from './components/Perepere';
 import './App.css';
 
 function App() {
@@ -16,8 +16,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React 
+          
         </a>
+        <Perepere posistion="0" pereperecolor="w"/>
       </header>
     </div>
   );
