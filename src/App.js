@@ -1,8 +1,10 @@
 import Logo from "./images/Mu_Torere.svg";
+import Perepere from "./components/Perepere";
 import "./App.css";
 
 function App() {
   return (
+
     <div class="container">
       <div class="board">
         <button class="square white pos0"></button>
@@ -15,6 +17,10 @@ function App() {
         <button class="square black pos7"></button>
         <button class="square black pos8"></button>
       </div>
+
+   
+        <Perepere position="3" team="black" enable="true" />
+      
     </div>
   );
 }

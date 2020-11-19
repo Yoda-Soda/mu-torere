@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn predeploy`
+
+Runs the build steps for deployment.
+
+### `yarn deploy`
+
+Runs the script to deploy to [http://Yoda-Soda.github.io/mu-torere](https://yoda-soda.github.io/mu-torere/)
+
 ### `yarn start`
 
 Runs the app in the development mode.\
