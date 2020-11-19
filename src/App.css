@@ -13,19 +13,10 @@
   "square7 square7 square8 square8"
 } */
 
-.container {
-  background-image: url(./images/Mu_Torere.svg);
-  max-width: 30rem;
-  margin: 0 auto;
-}
-
 /* .container div {
   outline: 1px solid red;
   width: 500px;
   height: 500px;
-  background: ;
-
-
 } */
 
 /* .container div:hover {
@@ -33,66 +24,81 @@
   opacity: 0.3;
 } */
 
+.container {
+  background-image: url(./images/papa_takaro.svg);
+  max-width: 30rem;
+  margin: 0 auto;
+}
 
 .board {
   width: 100%;
   padding-top: 100%;
+
   background-size: contain;
-  border: 1px solid blue;
   position: relative;
   margin: 0 auto;
 }
 
 .square {
   background: red;
-  width: 10%;
-  height: 10%;
+  width: 12%;
+  height: 12%;
   position: absolute;
   border-radius: 50%;
+  border: none;
+  border: 3px solid transparent;
 }
 
-.pos1 { 
-  top: 4%;
-  left: 28%;
+.square:hover {
+  border-color: red;
+  cursor: pointer;
 }
 
-.pos2 { 
-  top: 80%;
-  left: 28%;
+.white {
+  background: grey;
 }
 
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.black {
+  background: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pos1 {
+  top: -1%;
+  left: 26%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pos2 {
+  top: 91%;
+  left: 26%;
 }
 
-.App-link {
-  color: #61dafb;
+.pos3 {
+  top: 91%;
+  left: 64%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pos4 {
+  top: 62%;
+  left: 91%;
+}
+.pos5 {
+  top: 23%;
+  left: 90%;
+}
+
+.pos6 {
+  top: 24%;
+  left: -2%;
+}
+.pos7 {
+  top: 63%;
+  left: -3%;
+}
+.pos8 {
+  top: -1%;
+  left: 63%;
+}
+.pos9 {
+  top: 43%;
+  left: 44%;
 }
