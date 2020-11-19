@@ -20,7 +20,7 @@ const Perepere = (props) => {
         fill={props.team}
       />
     </svg>
-  );}
-
+  );
+};
 
 export default Perepere;
