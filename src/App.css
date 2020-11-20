@@ -38,42 +38,52 @@
 }
 
 .pos0 {
-  top: -3%;
-  left: 24%;
+  top: -6%;
+  left: 56%;
+  position: absolute;
 }
 
 .pos1 {
-  top: 91%;
-  left: 26%;
+  top: 20%;
+  left: 83%;
+  position: absolute;
 }
 
 .pos2 {
-  top: 91%;
-  left: 64%;
+  top: 56%;
+  left: 86%;
+  position: absolute;
 }
 
 .pos3 {
-  top: 62%;
-  left: 91%;
+  top: 84%;
+  left: 58%;
+  position: absolute;
 }
 .pos4 {
-  top: 23%;
-  left: 90%;
+  top: 85%;
+  left: 22%;
+  position: absolute;
 }
 
 .pos5 {
-  top: 24%;
-  left: -2%;
+  top: 57%;
+  left: -7%;
+  position: absolute;
 }
 .pos6 {
-  top: 63%;
-  left: -3%;
+  top: 23%;
+  left: -6%;
+  position: absolute;
 }
 .pos7 {
-  top: -3%;
-  left: 63%;
+  top: -6%;
+  left: 19%;
+  position: absolute;
 }
 .pos8 {
-  top: 43%;
-  left: 44%;
+  top: 37%;
+  left: 40%;
+  position: absolute;
 }
+
