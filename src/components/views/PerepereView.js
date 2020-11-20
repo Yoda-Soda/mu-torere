@@ -26,7 +26,6 @@ const PerepereView = () => {
     );
   });
   return testMap;
-  //console.log("🔥", testMap);
 };
 
 export default PerepereView;
