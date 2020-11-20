@@ -20,24 +20,34 @@ const nextToToken = (position) => {
   return [position + 1, 8, position - 1];
 };
 
-const checkIfSurounded = (state) => {
-  //check each token if it's surrounded
-  for (let index = 1; index < state.length; index++) {
-    const element = state[index];
-    //check each adjacent token if it's not open
-    for (const adjacentToken of nextToToken(element.position)) {
-      if (state)
-        for (let innerIndex = 1; innerIndex < state.length; innerIndex++) {
-          const innerElement = state[innerIndex];
-          if (
-            innerElement.position === adjacentToken &&
-            innerElement.team !== null
-          ) {
-            state;
-          }
-        }
+const checkIfEmpty = (adjacentToken, state) => {
+  if (state.pereperes[adjacentToken].team === null) {
+    return true;
+  }
+  return false;
+};
+//parameter is an array positions
+const checkIfSurounded = (adjacentTokenPositions, state) => {
+  let counter = 0;
+  for (const adjacentToken of adjacentTokenPositions) {
+    if (!checkIfEmpty(adjacentToken, state)) {
+      counter++;
     }
   }
+  if (counter === adjacentTokenPositions.length) {
+    return true;
+  }
+  return false;
 };
 
-module.exports = { findOpenPosition, checkSuroundings: checkIfSurounded };
+const checkAndSetAllSurounded = (state) => {
+  //check each token if it's surrounded
+  for (const token of state.pereperes) {
+    if (checkIfSurounded(nextToToken(token.position), state)) {
+      token.enabled = false;
+    }
+  }
+  return state;
+};
+
+module.exports = { findOpenPosition, checkAndSetAllSurounded };
