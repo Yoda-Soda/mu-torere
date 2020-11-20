@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.0"
+	width="604"
+	height="604"
+	viewBox="198 198 604 604"
+	id="svg2">
+	<title>Mu Torere Board</title>
+	<defs>
+		<linearGradient id="LinearGradientStoneShadow">
+			<stop style="stop-color:#000000;stop-opacity:1;" offset="0" />
+			<stop style="stop-color:#000000;stop-opacity:0.05;" offset="1" />
+		</linearGradient>
+		<linearGradient id="WhiteLinearGradient">
+			<stop style="stop-color:#ffffff;stop-opacity:1" offset="0" />
+			<stop style="stop-color:#eeeeee;stop-opacity:1" offset="0.5" />
+			<stop style="stop-color:#bbbbbb;stop-opacity:1" offset="1" />
+		</linearGradient>
+		<linearGradient id="BlackLinearGradient">
+			<stop style="stop-color:#cccccc;stop-opacity:1" offset="0" />
+			<stop style="stop=color:#999999;stop-opacity:1" offset="0.9" />
+			<stop style="stop-color:#000000;stop-opacity:1" offset="1" />
+		</linearGradient>
+		<radialGradient id="RadialGradientStoneShadow" xlink:href="#LinearGradientStoneShadow"
+			cx="4" cy="4" fx="14" fy="14" r="36" gradientUnits="userSpaceOnUse" />
+		<radialGradient id="BlackRadialGradient" xlink:href="#BlackLinearGradient"
+			cx="0" cy="0" fx="-20" fy="-20" r="36" gradientUnits="userSpaceOnUse" />
+		<radialGradient id="WhiteRadialGradient" xlink:href="#WhiteLinearGradient"
+			cx="0" cy="0" fx="-20" fy="-20" r="36" gradientUnits="userSpaceOnUse" />
+		<circle id="StoneShadow" r="36" cx="4" cy="4"
+			style="fill:url(#RadialGradientStoneShadow);stroke:none" />
+		<g id="MasterBlackStone">
+			<use xlink:href="#StoneShadow" />
+			<circle id="BlackStone" cx="0" cy="0" r="36"
+				style="fill:url(#BlackRadialGradient);fill-opacity:1;stroke:#000000;stroke-linecap:square;stroke-opacity:1" />
+		</g>
+		<g id="MasterWhiteStone">
+			<use xlink:href="#StoneShadow" />
+			<circle id="WhiteStone" cx="0" cy="0" r="36"
+				style="fill:url(#WhiteRadialGradient);fill-opacity:1;stroke:#cccccc;stroke-linecap:square;stroke-opacity:1" />
+		</g>
+	</defs>
+	<polygon id="OuterOctagon"
+		points="375.73593,200 624.26407,200 800,375.73593 800,624.26407 624.26407,800 375.73593,800 200,624.26407 200,375.73593"
+
+		style="fill:#ffffff;fill-rule:evenodd;stroke:#cccccc;stroke-width:4;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1" />
+	<g id="GridLayer"
+	style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1">
+		<polygon id="MasterOctagon"
+			points="396.44661,250 603.55339,250 750,396.44661 750,603.55339 603.55339,750 396.44661,750 250,603.55339 250,396.44661 396.44661,250" />
+		<polyline points="603.55339,250 396.44661,750" />
+		<polyline points="396.44661,250 603.55339,750" />
+		<polyline points="750,396.44661 250,603.55339" />
+		<polyline points="750,603.55339 250,396.44661" />
+	</g>
+	<g id="StonesLayer">
+		<use xlink:href="#MasterWhiteStone" transform="translate(396.44661,250)" />
+		<use xlink:href="#MasterWhiteStone" transform="translate(250,396.44661)" />
+		<use xlink:href="#MasterWhiteStone" transform="translate(250,603.55339)" />
+		<use xlink:href="#MasterWhiteStone" transform="translate(396.44661,750)" />
+		<use xlink:href="#MasterBlackStone" transform="translate(603.55339,750)" />
+		<use xlink:href="#MasterBlackStone" transform="translate(750,603.55339)" />
+		<use xlink:href="#MasterBlackStone" transform="translate(750,396.44661)" />
+		<use xlink:href="#MasterBlackStone" transform="translate(603.55339,250)" />
+	</g>
+</svg>

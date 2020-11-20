@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.container {
+  background-image: url(./images/papa_takaro.svg);
+  background-repeat: no-repeat;
+  max-width: 30rem;
+  margin: 5rem auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.board {
+  width: 100%;
+  padding-top: 100%;
+
+  background-size: contain;
+  position: relative;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.square {
+  background: red;
+  width: 12%;
+  height: 12%;
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  border: 3px solid transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.square:hover {
+  border-color: red;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.white {
+  background: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.black {
+  background: black;
+}
+
+.pos0 {
+  top: -3%;
+  left: 24%;
+}
+
+.pos1 {
+  top: 91%;
+  left: 26%;
+}
+
+.pos2 {
+  top: 91%;
+  left: 64%;
+}
+
+.pos3 {
+  top: 62%;
+  left: 91%;
+}
+.pos4 {
+  top: 23%;
+  left: 90%;
+}
+
+.pos5 {
+  top: 24%;
+  left: -2%;
+}
+.pos6 {
+  top: 63%;
+  left: -3%;
+}
+.pos7 {
+  top: -3%;
+  left: 63%;
+}
+.pos8 {
+  top: 43%;
+  left: 44%;
 }
