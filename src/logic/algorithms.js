@@ -1,3 +1,5 @@
+const { togglePlayer } = require("./updateState");
+
 const findOpenPosition = (state) => {
   for (let counter = 1; counter < state.length; counter++) {
     const element = state[counter];
@@ -50,4 +52,32 @@ const checkAndSetAllSurounded = (state) => {
   return state;
 };
 
-module.exports = { findOpenPosition, checkAndSetAllSurounded };
+//checks(provides true and false) for a specific tokens surroundings to see if it has at least one opponent next to it
+const checkForAdjacentOpponent = (tokenPosition, state) => {
+  //loops through surrounded tokens and checks for any tokens being the opposite color then itself
+  for (const adjacentTokenPosition of nextToToken(tokenPosition)) {
+    if (
+      state.pereperes[adjacentTokenPosition].team ===
+      togglePlayer(state.pereperes[tokenPosition].team)
+    ) {
+      return true;
+    }
+  }
+  return false;
+};
+
+const updateForAdjacentOpponent = (state) => {
+  //check all tokens if they have a opposition token next to them
+  for (const token of state.pereperes) {
+    if (!checkForAdjacentOpponent(token.position, state)) {
+      token.enabled = false; //disable token if no opposition token has been found
+    }
+  }
+  return state;
+};
+
+module.exports = {
+  findOpenPosition,
+  checkAndSetAllSurounded,
+  updateForAdjacentOpponent,
+};
