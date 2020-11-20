@@ -4,6 +4,7 @@ const resetState = () => {
     { turn: "black" },
     { posistion: 0, team: "black", enabled: true },
     { posistion: 1, team: "black", enabled: true },
+    { posistion: 2, team: "black", enabled: true },
     { posistion: 3, team: "black", enabled: true },
     { posistion: 4, team: "black", enabled: true },
     { posistion: 5, team: "black", enabled: true },
