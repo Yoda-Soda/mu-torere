@@ -18,20 +18,6 @@ const defaultStateBlack = {
     { position: 8, team: "black", enabled: true },
   ],
 };
-const defaultStateWhite = {
-  turn: "white",
-  pereperes: [
-    { position: 0, team: "white", enabled: true },
-    { position: 1, team: "white", enabled: true },
-    { position: 2, team: "white", enabled: true },
-    { position: 3, team: "white", enabled: true },
-    { position: 4, team: "white", enabled: true },
-    { position: 5, team: "white", enabled: true },
-    { position: 6, team: "white", enabled: true },
-    { position: 7, team: "white", enabled: true },
-    { position: 8, team: "white", enabled: true },
-  ],
-};
 describe("I have a way to reset my state", () => {
   test("It should restore the state to a predictable state", () => {
     const state = resetState();

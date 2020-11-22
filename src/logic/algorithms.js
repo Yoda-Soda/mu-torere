@@ -1,10 +1,9 @@
 const { togglePlayer } = require("./updateState");
 
 const findOpenPosition = (state) => {
-  for (let counter = 1; counter < state.length; counter++) {
-    const element = state[counter];
-    if (element.team === null) {
-      return counter - 1;
+  for (const token of state.pereperes) {
+    if (token.team === null) {
+      return token.position;
     }
   }
 };
