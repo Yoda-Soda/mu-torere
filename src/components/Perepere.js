@@ -1,7 +1,7 @@
 import React from "react";
 
 const Perepere = (props) => {
-  if (props.team === "null") {
+  if (props.team === null) {
     return null;
   }
   return (
@@ -9,7 +9,7 @@ const Perepere = (props) => {
       width="100"
       height="100"
       className={"pos" + props.position}
-      onClick={() => console.log(props.position)}
+      onClick={() => props.onTokenClick(props.position)}
     >
       <circle
         cx="50"
