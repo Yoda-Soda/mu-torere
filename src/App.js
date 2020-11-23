@@ -7,7 +7,11 @@ import {
   disableInactivePlayer,
   togglePlayer,
 } from "./logic/updateState";
-import { findOpenPosition, checkAndSetAllSurounded } from "./logic/algorithms";
+import {
+  findOpenPosition,
+  checkAndSetAllSurounded,
+  updateForAdjacentOpponent,
+} from "./logic/algorithms";
 
 function App() {
   const [currentBoardState, setCurrentBoardState] = useState(startingState());
@@ -26,6 +30,7 @@ function App() {
     newState = disableInactivePlayer(newState);
     setCurrentBoardState(newState);
     newState = checkAndSetAllSurounded(newState);
+    newState = updateForAdjacentOpponent(newState);
   };
 
   return (
