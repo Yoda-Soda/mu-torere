@@ -10,6 +10,7 @@ describe("I have a way of finding the open/null position on the board", () => {
     pereperes: [
       { position: 0, team: "black", enabled: false },
       { position: 1, team: "black", enabled: false },
+      { position: 2, team: "black", enabled: false },
       { position: 3, team: "black", enabled: false },
       { position: 4, team: "black", enabled: false },
       { position: 5, team: "black", enabled: false },
@@ -23,7 +24,7 @@ describe("I have a way of finding the open/null position on the board", () => {
     test(`It should provide me with the correct position for ${counter}`, () => {
       token.team = null;
       const position = findOpenPosition(testState);
-      expect(position).toEqual();
+      expect(position).toEqual(counter++);
       token.team = "black";
     });
   }

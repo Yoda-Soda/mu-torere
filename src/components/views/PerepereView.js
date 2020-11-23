@@ -8,7 +8,7 @@ const PerepereView = (props) => {
         key={token.position}
         position={token.position}
         team={token.team}
-        enable={token.enabled}
+        enabled={token.enabled}
         onTokenClick={props.onShowClick}
       />
     );
