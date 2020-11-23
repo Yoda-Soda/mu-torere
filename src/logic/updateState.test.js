@@ -3,6 +3,7 @@ const {
   startingState,
   togglePlayer,
   disableInactivePlayer,
+  enableAll,
 } = require("./updateState");
 const defaultStateBlack = {
   turn: "black",
@@ -16,20 +17,6 @@ const defaultStateBlack = {
     { position: 6, team: "black", enabled: true },
     { position: 7, team: "black", enabled: true },
     { position: 8, team: "black", enabled: true },
-  ],
-};
-const defaultStateWhite = {
-  turn: "white",
-  pereperes: [
-    { position: 0, team: "white", enabled: true },
-    { position: 1, team: "white", enabled: true },
-    { position: 2, team: "white", enabled: true },
-    { position: 3, team: "white", enabled: true },
-    { position: 4, team: "white", enabled: true },
-    { position: 5, team: "white", enabled: true },
-    { position: 6, team: "white", enabled: true },
-    { position: 7, team: "white", enabled: true },
-    { position: 8, team: "white", enabled: true },
   ],
 };
 describe("I have a way to reset my state", () => {
@@ -168,6 +155,70 @@ describe("I have a way to disable tokens of the inactive player", () => {
           { position: 8, team: "white", enabled: true },
         ],
       });
+    });
+  });
+});
+
+describe("I have a function that can reset state to all enabled", () => {
+  test("It should not effect enabled tokens", () => {
+    const state = enableAll({
+      turn: "white",
+      pereperes: [
+        { position: 0, team: "white", enabled: true },
+        { position: 1, team: "white", enabled: true },
+        { position: 2, team: "white", enabled: true },
+        { position: 3, team: "white", enabled: true },
+        { position: 4, team: "white", enabled: true },
+        { position: 5, team: "white", enabled: true },
+        { position: 6, team: "white", enabled: true },
+        { position: 7, team: "white", enabled: true },
+        { position: 8, team: "white", enabled: true },
+      ],
+    });
+    expect(state).toEqual({
+      turn: "white",
+      pereperes: [
+        { position: 0, team: "white", enabled: true },
+        { position: 1, team: "white", enabled: true },
+        { position: 2, team: "white", enabled: true },
+        { position: 3, team: "white", enabled: true },
+        { position: 4, team: "white", enabled: true },
+        { position: 5, team: "white", enabled: true },
+        { position: 6, team: "white", enabled: true },
+        { position: 7, team: "white", enabled: true },
+        { position: 8, team: "white", enabled: true },
+      ],
+    });
+  });
+
+  test("It should toggle disabled tokens", () => {
+    const state = enableAll({
+      turn: "white",
+      pereperes: [
+        { position: 0, team: "white", enabled: false },
+        { position: 1, team: "white", enabled: false },
+        { position: 2, team: "white", enabled: false },
+        { position: 3, team: "white", enabled: false },
+        { position: 4, team: "white", enabled: false },
+        { position: 5, team: "white", enabled: false },
+        { position: 6, team: "white", enabled: false },
+        { position: 7, team: "white", enabled: false },
+        { position: 8, team: "white", enabled: false },
+      ],
+    });
+    expect(state).toEqual({
+      turn: "white",
+      pereperes: [
+        { position: 0, team: "white", enabled: true },
+        { position: 1, team: "white", enabled: true },
+        { position: 2, team: "white", enabled: true },
+        { position: 3, team: "white", enabled: true },
+        { position: 4, team: "white", enabled: true },
+        { position: 5, team: "white", enabled: true },
+        { position: 6, team: "white", enabled: true },
+        { position: 7, team: "white", enabled: true },
+        { position: 8, team: "white", enabled: true },
+      ],
     });
   });
 });

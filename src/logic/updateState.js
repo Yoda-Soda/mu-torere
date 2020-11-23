@@ -15,6 +15,14 @@ const resetState = () => {
     ],
   };
 };
+
+const enableAll = (state) => {
+  for (const token of state.pereperes) {
+    token.enabled = true;
+  }
+  return state;
+};
+
 // allows for predictable starting state for the start of the game
 const startingState = () => {
   return {
@@ -52,4 +60,5 @@ module.exports = {
   startingState,
   togglePlayer,
   disableInactivePlayer,
+  enableAll,
 };
