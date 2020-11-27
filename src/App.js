@@ -30,7 +30,9 @@ function App() {
     newState = disableInactivePlayer(newState);
     setCurrentBoardState(newState);
     newState = checkAndSetAllSurounded(newState);
-    newState = updateForAdjacentOpponent(newState);
+    if (positionClicked === 8) {
+      newState = updateForAdjacentOpponent(newState);
+    }
   };
 
   return (
